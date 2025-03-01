@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leal Roma</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            margin: 0; 
+            padding: 0; 
+            background: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564') no-repeat center center fixed; 
+            background-size: cover;
+            color: white;
+        }
+        header { background: rgba(0, 0, 0, 0.7); padding: 20px; font-size: 24px; }
+        section { 
+            margin: 50px; 
+            padding: 20px; 
+            background: rgba(0, 0, 0, 0.6); 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); 
+        }
+        h1 { font-size: 32px; }
+        button { 
+            padding: 10px 20px; 
+            background: blue; 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+            margin-top: 20px;
+        }
+        #infoClan {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+    <script>
+        function mostrarInfo() {
+            var info = document.getElementById("infoClan");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>Bienvenido a Leal Roma</header>
+    <section>
+        <h1>Bienvenido, esta es la página web del Clan Leal Roma</h1>
+        <button onclick="mostrarInfo()">Info del Clan</button>
+        <div id="infoClan">
+            <h2>Requisitos para unirse al Clan</h2>
+            <ul>
+                <li>Ser un jugador activo</li>
+                <li>Tener buena actitud y respeto</li>
+                <li>Participar en eventos del clan</li>
+                <li>Contar con un nivel mínimo de experiencia</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
